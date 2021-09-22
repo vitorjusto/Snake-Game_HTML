@@ -1,3 +1,18 @@
+:root
+{
+    --Background: lightgreen;
+    --hud: darkgreen;
+    --fontColor: white;
+    --border: 5px;
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
 body
 {
 
@@ -12,7 +27,12 @@ body
 
 canvas
 {
-    margin: 50px;
+    margin:0;
+}
+
+i
+{
+    font-size: 30px;
 }
 
 p
@@ -20,4 +40,89 @@ p
     font-size: 50px;
     color: green;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hud
+{
+    background-color: var(--hud);
+    width: 512px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: var(--fontColor);
+        margin:0;
+
+
+
+}
+
+h3
+{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.border
+{
+    border: var(--border) solid var(--hud);
+    text-align: center;
+    background-color: var(--hud);
+    height: 622px;
+    width: 520px;
+    border-bottom: calc(var(--border)) solid var(--hud);
+}
+
+.options
+{
+
+    background-color: white;
+    border: var(--border) solid var(--hud);
+    border-radius: 10px;
+    width: 100%;
+    height: 50%;
+
+
+}
+.option-box
+{
+    position: absolute;
+    width: 100%;
+}
+
+.title
+{
+    color:white;
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.buttons
+{
+
+    width: 512;
+    height: 512;
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.button
+{
+    border:6px solid var(--fontColor);
+    background-color: var(--hud) ;
+    color: var(--fontColor);
+    font-size: 20px;
+    width: 150px;
+    height: 70px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
 }
